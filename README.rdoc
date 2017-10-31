@@ -1,28 +1,21 @@
-== README
+Finance tracker application from RoR course. Stock information retrieved from Yahoo! Finance
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Resources/tools used: Devise, Bootstrap, AJAX, Yahoo! Finance API
 
-Things you may want to cover:
+Features:
+- User authentication
+- Ability to look up stocks and add/remove tickers from portfolio
+- Ability to search for users by first name, last name, email
+- Ability to add and remove friends, and view user profiles
 
-* Ruby version
+Known bugs (1/11/2017):
+- Stock ticker search does not work if a user has already added that ticker to their portfolio, I was told this might be due to Yahoo's stock quote API being inactive.
+- Clicking the delete button on a stock on the portfolio page results in the wrong ticker being removed.
 
-* System dependencies
+Course link: https://www.udemy.com/the-complete-ruby-on-rails-developer-course/
+Videos: Mashrur Hossain (https://twitter.com/mashrur_hossain)
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+TODO:
+- Customize styling
+- Migrate from Yahoo's API to Alpha Vantage (Details: https://docs.google.com/document/d/1184B5khBBQXeMKCW9Gyjuk7304CO-tuPlKoBPRROySQ/edit?ts=594c22af#heading=h.tp64sb1ua276)
+- Add more information on stocks e.g. charts, moving averages, 52-week highs/lows
